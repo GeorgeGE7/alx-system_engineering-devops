@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name "*.gif" -exec sh -c 'base=$(printf "%s\n" "{}" | rev | cut -f 2- -d . | rev); printf "%s\n" "$base"' \+ | LC_COLLATE=C sort -fi
