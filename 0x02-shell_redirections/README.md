@@ -1,8 +1,3 @@
-new README fil
-file 1
-file 2
-file 3
-file 4
-file 5
-file 6
-file 7
+0x02. Shell, I/O Redirections and filters
+
+There are 26 File every file do something you can go into each file and discover
