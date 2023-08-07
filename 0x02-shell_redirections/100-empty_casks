@@ -1,2 +1,2 @@
 #!/bin/bash
-(find . -type d -empty -printf "%P\n"; find . -type f -empty -printf "%P\n") | sort
+find . -empty -printf "%P\n" | awk -F/ '{print $NF}'
