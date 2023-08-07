@@ -1,2 +1,2 @@
 #!/bin/bash
-find . \( ! -path '*/\.*' \) -type d -empty -printf '%P\n' && find . \( ! -path '*/\.*' \) -type f -empty -printf '%P\n'
+find . \( ! -path '*/\.*' \) -type d -empty -printf '%P\n'
