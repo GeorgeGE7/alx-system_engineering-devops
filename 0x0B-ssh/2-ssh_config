@@ -1,0 +1,6 @@
+# Add school IdentifyFile
+# Add PasswordAuthentication no
+
+Host *
+    IdentifyFile ~/.ssh/school
+    PasswordAuthentication no

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# New RSA key (school) with 4096 bits
+
+shh-keygen -t rsa -b 4096 -f school -N betty
