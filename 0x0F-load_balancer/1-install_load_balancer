@@ -17,8 +17,8 @@ backend elgeo.tech_backend
     timeout connect  3000
     timeout server  30000
     balance roundrobin
-    server 228560-web-01 54.87.252.218:80 check
-    server 228560-web-02 52.204.94.236:80 check
+    server 502876-web-01 54.87.252.218:80 check
+    server 502876-web-02 52.204.94.236:80 check
 EOT
 
 sudo service haproxy restart
