@@ -1,7 +1,7 @@
 server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    
+
     # All task server name
     server_name 100.25.21.173;  # Replace this with your public IP or domain name
 
@@ -13,7 +13,7 @@ server {
         proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
     }
 
-    # Third task loaction
+    # Second task loaction
     location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
         proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
     }
@@ -22,7 +22,17 @@ server {
     location /api {
         proxy_pass http://127.0.0.1:5002/api;
     }
-    
+
+    # Fifth task loaction
+    location / {
+        proxy_pass http://127.0.0.1:5003/2-hbnb;
+    }
+
+    # Fourth task loaction
+    location /static {
+        alias web_dynamic/static/;
+    }
+
     # Not foun error handling
     error_page 404 /404.html;
     location /404 {
