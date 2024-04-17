@@ -1,13 +1,13 @@
 server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
+    listen 80 default_server;
+    listen [::]:80 default_server;
 
-        server_name 100.25.21.173;
+    server_name 100.25.21.173;  # Replace this with your public IP or domain name
 
-        add_header X-Served-By 502876-web-01;
+    add_header X-Served-By 502876-web-01;
 
-        location = /airbnb-onepage/  {
-                proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
-        }
+    location /airbnb-onepage/ {
+        proxy_pass http://127.0.0.1:5000/;
+    }
 }
 
